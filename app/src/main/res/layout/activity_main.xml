@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical"
+              android:gravity="center">
+
+    "child views" or "children" of the linear layout -->
+    <Space android:layout_width="0dp" android:layout_height="0dp"
+           android:layout_weight="0.1"/>
+
+
+    <TextView
+            android:text="Player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayer1"
+
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+
+        <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player1Plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+
+        <Button
+                android:text="+5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player1plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player1minus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player1Minus"/>
+    </LinearLayout><![CDATA[>
+    ]]>
+    <TextView
+            android:text="Player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/btnPlayer2"
+    />
+    <TextView
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayer2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/btnPlayer2"
+    />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+
+        <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player2Plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="+5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player2plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player2minus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player2Minus"/>
+    </LinearLayout>
+    <TextView
+            android:text="Player3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/btnPlayer1"/>
+    <TextView
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayer3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/btnPlayer1"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+
+        <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player3Plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+        android:layout_weight="1"/>
+        <Button
+                android:text="+5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player3plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player3minus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player3Minus"/>
+
+    </LinearLayout><![CDATA[>
+    ]]>
+    <TextView
+            android:text="Player4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+    <TextView
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPlayer4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+
+        <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player4Plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="+5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player4plus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player4minus"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent"
+               android:layout_weight="1"/>
+        <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/player4Minus"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/dead"/>
+    <Space android:layout_width="0dp" android:layout_height="0dp"
+           android:layout_weight="1
+"/>
+</LinearLayout>
